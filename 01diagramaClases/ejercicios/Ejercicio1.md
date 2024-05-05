@@ -8,3 +8,5 @@ Crea la clase movil, tarjeta y bateria.
 - La clase movil tiene el método "más información", que mostrará la información proporcionada por sus componentes: indicará el número de ciclos cargas de la bateria y bateria actual, y la compañia de la/las tarjeta SIMS y su número.
 
 Importante indicar si los métodos o atributos son públicos o privados y la cardinalidad.
+
+- Añade información adicional (atributos) que consideres para la batería y la tarjeta SIM y el móvil.

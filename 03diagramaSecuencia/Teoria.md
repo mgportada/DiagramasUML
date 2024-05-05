@@ -15,7 +15,7 @@
 ```plantUML
 @startuml
 
-participant User
+actor User
 participant Cajero
 participant Banco
 
