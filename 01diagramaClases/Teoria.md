@@ -214,10 +214,13 @@ classDiagram
         - title: string
         - author: string
         - publicationYear: int
+        - reviews: Review[]
         + Book(title: string, author: string, publicationYear: int)
         + getTitle(): string
         + getAuthor(): string
         + getPublicationYear(): int
+        + setReview(review: Review): void
+        + getReviews(): Review[]
     }
 
     class Review {
