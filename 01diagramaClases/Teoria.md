@@ -230,7 +230,7 @@ classDiagram
         + getReviewer(): string
     }
 
-    Book "1" -- "0..*" Review
+    Book "1" o-- "0..*" Review
 
 ```
 
