@@ -208,6 +208,33 @@ classDiagram
 ## AGREGACIÓN
 
 ### Ejemplo 1
+```mermaid
+classDiagram
+    class Book {
+        - title: string
+        - author: string
+        - publicationYear: int
+        + Book(title: string, author: string, publicationYear: int)
+        + getTitle(): string
+        + getAuthor(): string
+        + getPublicationYear(): int
+    }
+
+    class Review {
+        - rating: int
+        - comment: string
+        - reviewer: string
+        + Review(rating: int, comment: string, reviewer: string)
+        + getRating(): int
+        + getComment(): string
+        + getReviewer(): string
+    }
+
+    Book "1" -- "0..*" Review
+
+```
+
+### Ejemplo 2
 
 ```mermaid
 classDiagram
@@ -229,7 +256,7 @@ classDiagram
 
 ```
 
-### Ejemplo 2
+### Ejemplo 3
 
 ```mermaid
 classDiagram
@@ -248,6 +275,8 @@ classDiagram
 
     Biblioteca "1" o-- "*" Libro : Contiene
 ```
+
+
 
 ## COMPOSICIÓN
 
